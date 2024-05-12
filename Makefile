@@ -44,6 +44,8 @@ endif
 
 COMM_HDR    = alloc-inl.h config.h debug.h types.h
 
+AFL_NO_X86 = 1
+
 all: test_x86 $(PROGS) afl-as test_build all_done
 
 ifndef AFL_NO_X86
